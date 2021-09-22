@@ -1,8 +1,8 @@
 {
   "kind": "collectionType",
-  "collectionName": "categories",
+  "collectionName": "sections",
   "info": {
-    "name": "Categories"
+    "name": "Section"
   },
   "options": {
     "increments": true,
@@ -11,16 +11,16 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "category_name": {
+    "name": {
       "type": "string"
     },
     "slug": {
       "type": "uid",
-      "targetField": "category_name"
+      "targetField": "name"
     },
-    "components": {
-      "via": "categories",
-      "collection": "components"
+    "component": {
+      "via": "section",
+      "model": "components"
     }
   }
 }
