@@ -2,7 +2,7 @@
   "kind": "collectionType",
   "collectionName": "frameworks",
   "info": {
-    "name": "Framework",
+    "name": "Frameworks",
     "description": ""
   },
   "options": {
@@ -19,9 +19,14 @@
       "type": "uid",
       "targetField": "name"
     },
-    "component": {
-      "via": "framework",
-      "model": "components"
+    "components": {
+      "collection": "sections",
+      "via": "framework"
+    },
+    "SEO": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.seo"
     }
   }
 }

@@ -2,7 +2,8 @@
   "kind": "collectionType",
   "collectionName": "types",
   "info": {
-    "name": "Type"
+    "name": "Type",
+    "description": ""
   },
   "options": {
     "increments": true,
@@ -18,9 +19,14 @@
       "type": "uid",
       "targetField": "name"
     },
-    "component": {
-      "via": "type",
-      "model": "components"
+    "components": {
+      "collection": "sections",
+      "via": "type"
+    },
+    "SEO": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.seo"
     }
   }
 }

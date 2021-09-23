@@ -1,8 +1,8 @@
 {
   "kind": "collectionType",
-  "collectionName": "components",
+  "collectionName": "sections",
   "info": {
-    "name": "Components",
+    "name": "Sections",
     "description": ""
   },
   "options": {
@@ -34,17 +34,22 @@
       "type": "uid",
       "targetField": "name"
     },
-    "framework": {
-      "via": "component",
-      "model": "frameworks"
+    "SEO": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.seo"
+    },
+    "categories": {
+      "via": "sections",
+      "collection": "categories"
     },
     "type": {
-      "model": "type",
-      "via": "component"
+      "via": "components",
+      "model": "type"
     },
-    "section": {
-      "model": "section",
-      "via": "component"
+    "framework": {
+      "via": "components",
+      "model": "frameworks"
     }
   }
 }

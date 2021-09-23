@@ -1,8 +1,8 @@
 {
   "kind": "collectionType",
-  "collectionName": "sections",
+  "collectionName": "announcements",
   "info": {
-    "name": "Section"
+    "name": "Announcements"
   },
   "options": {
     "increments": true,
@@ -11,16 +11,14 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "name": {
+    "title": {
       "type": "string"
     },
-    "slug": {
-      "type": "uid",
-      "targetField": "name"
+    "show": {
+      "type": "boolean"
     },
-    "component": {
-      "via": "section",
-      "model": "components"
+    "link": {
+      "type": "string"
     }
   }
 }
