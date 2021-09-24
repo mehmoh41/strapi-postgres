@@ -1,8 +1,8 @@
 {
   "kind": "collectionType",
-  "collectionName": "pages",
+  "collectionName": "categories",
   "info": {
-    "name": "pages",
+    "name": "Categories",
     "description": ""
   },
   "options": {
@@ -12,16 +12,21 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "title": {
+    "name": {
       "type": "string"
     },
-    "content": {
-      "type": "richtext"
+    "slug": {
+      "type": "string"
     },
     "SEO": {
       "type": "component",
       "repeatable": false,
       "component": "shared.seo"
+    },
+    "sections": {
+      "collection": "sections",
+      "via": "categories",
+      "dominant": true
     }
   }
 }

@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_shared_share_images",
+  "info": {
+    "name": "shareImage",
+    "icon": "address-card"
+  },
+  "options": {},
+  "attributes": {
+    "alt": {
+      "type": "string"
+    },
+    "media": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    }
+  }
+}
