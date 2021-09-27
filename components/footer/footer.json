@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_footer_footers",
+  "info": {
+    "name": "footer",
+    "icon": "hourglass-end"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "link": {
+      "type": "component",
+      "repeatable": true,
+      "component": "link.link"
+    }
+  }
+}
