@@ -1,8 +1,8 @@
 {
   "kind": "collectionType",
-  "collectionName": "types",
+  "collectionName": "plans",
   "info": {
-    "name": "Type",
+    "name": "Plans",
     "description": ""
   },
   "options": {
@@ -21,7 +21,7 @@
     },
     "components": {
       "collection": "sections",
-      "via": "type"
+      "via": "plan"
     },
     "SEO": {
       "type": "component",
