@@ -17,9 +17,9 @@
       "repeatable": false,
       "component": "link.link"
     },
-    "footer_section": {
+    "sections": {
       "type": "component",
-      "repeatable": false,
+      "repeatable": true,
       "component": "footer.footer"
     }
   }
