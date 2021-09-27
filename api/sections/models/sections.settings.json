@@ -43,9 +43,9 @@
       "via": "sections",
       "collection": "categories"
     },
-    "type": {
+    "plan": {
       "via": "components",
-      "model": "type"
+      "model": "plan"
     },
     "framework": {
       "via": "components",
