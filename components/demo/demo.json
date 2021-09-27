@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_demo_demos",
+  "info": {
+    "name": "demo",
+    "icon": "align-right"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    }
+  }
+}
